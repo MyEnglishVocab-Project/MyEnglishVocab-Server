@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    # 테스트할 때는 파일(file) 대신 메모리(mem) DB를 사용합니다.
+    url: jdbc:h2:mem:testdb;MODE=MySQL
+  jpa:
+    hibernate:
+      # 테스트가 끝나면 데이터를 깔끔하게 비웁니다.
+      ddl-auto: create-drop

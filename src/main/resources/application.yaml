@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: my-vocab-server
+
+  datasource:
+    # 파일을 프로젝트 폴더 안에 'vocabdb'라는 이름으로 저장 (영구 저장)
+    url: jdbc:h2:file:./vocabdb;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 기존 데이터 유지하면서 스키마만 업데이트
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
