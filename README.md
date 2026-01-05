@@ -67,8 +67,8 @@ graph LR
   - React Router, CSS Moduls(Responsive Design)
 
 - **Backend**
-  - Java 17
-  - Spring Boot 3.x
+  - Java 21
+  - Spring Boot 3.5.9
   - Spring Data JPA
   - H2 Database (File mode)
 
